@@ -1,0 +1,120 @@
+$color_darkblue: #4752cc
+$color_blue: #4752cc
+*
+  font-family: 微軟正黑體
+  // border: solid 2px #777
+  body
+    height: 1000px
+  h1, h2, h3, h4, h5, h6
+    font-weight: 900
+  ul
+    padding: 0px
+  list-style: none
+  h1
+    text-align: center
+  p
+    text-align: justify
+header.jumbotron
+  margin-bottom: 0px
+  text-align: center
+  background-image: url(https://goo.gl/JbMyyg)
+  background-size: cover
+  background-attachment: fixed
+  .container
+    color: white
+    padding: 100px 0px
+  hr
+    max-width: 300px
+    border: solid 2px $color_darkblue
+  h4
+    color: rgba(white, 0.8)
+section
+  padding: 50px 0px
+section#section_ask
+  background-color: $color_blue
+  .col-sm-7.img
+    background-image: url(https://goo.gl/KGW9tj)
+    height: 350px
+    background-size: cover
+    animation-name: c2
+    animation-duration: 2s    
+  h2
+    color: #FFFFFF
+    margin-top: 130px
+    padding: 0px 20px
+section#section_resume
+  h3
+    text-align: justify
+  img
+    width: 100%
+  .img_wrap
+    height: 0px
+    overflow: hidden  
+  .circle
+    width: 50px
+    height: 50px
+    background-color: rgba(168, 189, 255, 0.3)
+    border-radius: 50%
+    position: relative
+    overflow: hidden
+    &::after
+      content: ""
+      display: block
+      background-color: rgba(63, 201, 255, 0.6)
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)
+      border-radius: 50%
+      position: relative
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+
+  .p90, .p180, .p270, .p360
+    width: 50%
+    height: 50%
+    position: absolute
+    left: 50%
+    top: 0
+    background-color: #4752cc
+
+  .p180
+    left: 50%
+    top: 50%
+
+  .p270
+    left: 0
+    top: 50%
+
+  .p360
+    left: 0
+    top: 0
+  .year
+    margin-left: 10px
+    border-left: solid 8px rgba(71, 82, 204, 0.8)
+    padding-left: 20px
+section#section_video
+  background-color: $color_darkblue
+@keyframes c2
+  0%
+    right: 50px    
+    opacity: 0.4
+
+  50%
+    right: 30px    
+    opacity: 0.7
+
+  100%    
+    right: 0px    
+    opacity: 1
+section#section_tail
+  margin-bottom: 0px
+  text-align: center
+  background-image: url(https://goo.gl/JbMyyg)
+  background-size: cover
+  background-attachment: fixed
+  .container
+    color: white
+    padding: 10px 0px  
+  h4
+    color: rgba(white, 0.8)  
+    

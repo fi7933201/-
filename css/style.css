@@ -1,0 +1,148 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  list-style: none;
+}
+* body {
+  height: 1000px;
+}
+* h1, * h2, * h3, * h4, * h5, * h6 {
+  font-weight: 900;
+}
+* ul {
+  padding: 0px;
+}
+* h1 {
+  text-align: center;
+}
+* p {
+  text-align: justify;
+}
+
+header.jumbotron {
+  margin-bottom: 0px;
+  text-align: center;
+  background-image: url(https://goo.gl/JbMyyg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+header.jumbotron .container {
+  color: white;
+  padding: 100px 0px;
+}
+header.jumbotron hr {
+  max-width: 300px;
+  border: solid 2px #4752cc;
+}
+header.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section {
+  padding: 50px 0px;
+}
+
+section#section_ask {
+  background-color: #4752cc;
+}
+section#section_ask .col-sm-7.img {
+  background-image: url(https://goo.gl/KGW9tj);
+  height: 350px;
+  background-size: cover;
+  animation-name: c2;
+  animation-duration: 2s;
+}
+section#section_ask h2 {
+  color: #FFFFFF;
+  margin-top: 130px;
+  padding: 0px 20px;
+}
+
+section#section_resume h3 {
+  text-align: justify;
+}
+section#section_resume img {
+  width: 100%;
+}
+section#section_resume .img_wrap {
+  height: 0px;
+  overflow: hidden;
+}
+section#section_resume .circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(168, 189, 255, 0.3);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+section#section_resume .circle::after {
+  content: "";
+  display: block;
+  background-color: rgba(63, 201, 255, 0.6);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section#section_resume .p90, section#section_resume .p180, section#section_resume .p270, section#section_resume .p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #4752cc;
+}
+section#section_resume .p180 {
+  left: 50%;
+  top: 50%;
+}
+section#section_resume .p270 {
+  left: 0;
+  top: 50%;
+}
+section#section_resume .p360 {
+  left: 0;
+  top: 0;
+}
+section#section_resume .year {
+  margin-left: 10px;
+  border-left: solid 8px rgba(71, 82, 204, 0.8);
+  padding-left: 20px;
+}
+
+section#section_video {
+  background-color: #4752cc;
+}
+
+@keyframes c2 {
+  0% {
+    right: 50px;
+    opacity: 0.4;
+  }
+  50% {
+    right: 30px;
+    opacity: 0.7;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+section#section_tail {
+  margin-bottom: 0px;
+  text-align: center;
+  background-image: url(https://goo.gl/JbMyyg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#section_tail .container {
+  color: white;
+  padding: 10px 0px;
+}
+section#section_tail h4 {
+  color: rgba(255, 255, 255, 0.8);
+}
